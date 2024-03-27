@@ -16,9 +16,6 @@
                 $(".editBtn").click(function(){
                     alert("변경된 정보를 저장하시겠습니까?")
                 })
-                $(".deleteBtn").click(function(){
-                    alert("해당 결제수단을 삭제하시겠습니까?")
-                })
             })
         </script>
     </head>
@@ -241,17 +238,6 @@
                                             <input type="text" name="address" id="address" value="" title="주소" class="w100">
                                             <input type="text" name="address2" id="address2" maxlength="200" onkeyup="javascript:inputarea_limite(this,200);" value="" placeholder="상세 주소를 입력해주세요." title="상세주소 입력" class="w100 ml5">
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">결제수단</th>
-                                    <td colspan="3">
-                                        <div style="background: #efefef;padding: 3px;display: inline-block;border-radius: 5px;margin:3px;">[하나카드] 1234 **** **** **** <button type="button" class="deleteBtn btn btn-secondary btn-sm" style="margin-left:15px;">삭제</button></div>
-                                        <div style="background: #efefef;padding: 3px;display: inline-block;border-radius: 5px;margin:3px;">[농협카드] 1234 **** **** **** <button type="button" class="btn btn-secondary btn-sm" style="margin-left:15px;">삭제</button></div>
-                                        <div style="background: #efefef;padding: 3px;display: inline-block;border-radius: 5px;margin:3px;">[카카오카드] 1234 **** **** **** <button type="button" class="btn btn-secondary btn-sm" style="margin-left:15px;">삭제</button></div>
-                                        <div style="background: #efefef;padding: 3px;display: inline-block;border-radius: 5px;margin:3px;">[하나카드2] 1234 **** **** **** <button type="button" class="btn btn-secondary btn-sm" style="margin-left:15px;">삭제</button></div>
-                                        <div style="background: #efefef;padding: 3px;display: inline-block;border-radius: 5px;margin:3px;">[우리카드] 1234 **** **** **** <button type="button" class="btn btn-secondary btn-sm" style="margin-left:15px;">삭제</button></div>
-                                        
                                     </td>
                                 </tr>
                             </tbody>
