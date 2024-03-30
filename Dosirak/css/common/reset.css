@@ -25,12 +25,12 @@ ul,ol,li{list-style:none;}
 table{width:100%;}
 iframe{display:block;}
 article{width:100%;}
-input{padding:5px;}
+input, select{padding:0 10px;min-height:37px;background:#fff;border:1px solid #E1E1E1;border-radius:5px;}
 input:disabled{cursor:default;}
 input:focus:not(input[type=button],input[type=submit]),textarea:focus{outline:none;background:rgb(232, 240, 254);}
-input[type=date],.el_datepicker{background:url("/auth/images/icons/icon_calendar.png")no-repeat 97% center/7%;}
+input[type=date],.el_datepicker{background:url("/img/icon/calendar.png")no-repeat 92% center/23px #fff;}
 input[type=date]::-webkit-calendar-picker-indicator{opacity:0;z-index:1;cursor:pointer;}
-textarea{resize:none;width:100%;min-height:80px;font-size:14px;border:1px solid #E1E1E1;padding:5px;}
+textarea{resize:none;width:100%;min-height:80px;font-size:14px;border:1px solid #E1E1E1;padding:10px;border-radius:5px;}
 ::placeholder, ::-ms-input-placeholder{color:#9F9F9F;font-weight:300;opacity:1;}
 :-ms-input-placeholder{color:#9F9F9F!important;font-weight:300;}
 /* Chrome, Safari, Edge, Opera */
