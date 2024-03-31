@@ -10,10 +10,16 @@
     <script src="/js/jquery-3.7.1.min.js"></script>
     <script>
         $(function(){
+            // tab
+            let tabLength = $(".bl_tabBtn").length;
+            let tabWD = 100 / tabLength;
+            $(".bl_tabBtn").css("width", tabWD + "%");
+            for(let i=0;i<tabLength;i++) $(".bl_tabWrap:nth-of-type("+ (i+1) +") .bl_tabBtn").css("margin-left", (tabWD*i) + "%");
+
             $(".bl_tabBtn").click(function(){
                 $(".bl_tabBtn").removeClass("hp_active")
                 $(this).addClass("hp_active");
-            })
+            });
         })
     </script>
 </head>
@@ -35,7 +41,7 @@
                     <ul class="bl_tab hp_mt50">
                         <li class="bl_tabWrap">
                             <button type="button" class="bl_tabBtn hp_active">작성가능한 리뷰</button>
-                            <div class="bl_tabCont">                                
+                            <div class="bl_tabCont">
                                 <table class="bl_TBsearch">
                                     <caption class="WA">검색</caption>
                                     <colgroup>
@@ -123,6 +129,9 @@
                                             <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
                                             <td>2024.01.23</td>
                                             <td><button type="button" class="el_btnS hp_br5 el_btnPointBord" disabled>등록하기</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bl_TBList__empty" colspan="4">작성가능한 리뷰가 없습니다.</td>
                                         </tr>
                                     </tbody>
                                 </table>

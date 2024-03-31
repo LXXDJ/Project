@@ -42,6 +42,16 @@
 .bl_TBList th,.bl_TBList td{padding:20px 10px;text-align:center;}
 .bl_TBList__ttl a{display:block;text-align:left;width:520px;}
 .bl_TBList__ttl a:hover{color:#426B1F;}
+.bl_TBList .bl_TBList__empty{padding:50px 0;color:#aaa;}
+.bl_TBList__empty::before{content:"";display:block;width:70px;height:70px;background:url("/img/icon/bento.png")no-repeat center/cover;margin:0 auto 20px;}
+
+.bl_TBList__qna{border:2px solid #426B1F}
+.bl_TBList__qnaNum{display:inline-flex;width:25px;height:25px;border-radius:50%;background:#426B1F;color:#fff;justify-content:center;align-items:center;}
+.bl_TBList__qna .bl_TBList__ttl a{width:585px;}
+
+.bl_TBList__order{}
+.bl_TBList__orderImg{width:70px;height:70px;margin-right:15px;}
+
 /* View */
 .bl_TBView{border-top:1px solid #777;}
 .bl_TBView tr{border-bottom:1px solid #dedede;}
@@ -61,10 +71,8 @@
 .bl_doneBox__txt::before{content:"";margin-right:20px;display:block;width:60px;height:60px;background:url("/img/icon/check.png")no-repeat center/cover;}
 /* Tab */
 .bl_tab{position:relative;padding-top:50px;}
-.bl_tabWrap{}
-.bl_tabBtn{width:50%;height:50px;position:absolute;top:0;left:0;background:#F9F9F9;border-radius:10px;border-bottom-left-radius:0;border-bottom-right-radius:0;font-size:14px;}
+.bl_tabBtn{height:50px;position:absolute;top:0;left:0;background:#F9F9F9;border-radius:10px;border-bottom-left-radius:0;border-bottom-right-radius:0;font-size:14px;}
 .bl_tabBtn.hp_active{background:#426B1F;color:#fff;}
-.bl_tabBtn__wrote{right:0;left:initial;}
 .bl_tabCont{display:none;}
 .bl_tabBtn.hp_active+.bl_tabCont{display:block;}
 

@@ -14,6 +14,7 @@
 .ly_spaceBetween{display:flex!important;justify-content:space-between;}
 .ly_spaceAround{display:flex!important;justify-content:space-around;}
 .ly_flexC{display:flex!important;justify-content:center;}
+.ly_flexEnd{display:flex!important;justify-content:flex-end;}
 .ly_flex{display:flex!important;}
 .ly_flexWrap{flex-wrap:wrap!important;}
 .ly_fdirecCol{flex-direction:column;}
@@ -66,11 +67,23 @@ button:disabled{background:#fff;border:1px solid #888;color:#888;cursor:default;
 
 .bl_radioBxArea{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:inline-block;cursor:pointer;}
 .bl_radioBxArea__input{position:absolute;opacity:0;cursor:pointer;height:0;width:0;}
-.bl_radioBxArea__txt{width:100%;height:35px;line-height:35px;background:#D9D9D9;text-align:center;color:#000;vertical-align:middle;display:inline-block;border-radius:5px;}
+.bl_radioBxArea__txt{width:100%;height:35px;background:#D9D9D9;text-align:center;color:#000;display:inline-flex;border-radius:5px;justify-content:center;align-items:center;}
 .bl_radioBxArea__input:checked ~ .bl_radioBxArea__txt{background-color:#426B1F;color:#fff;}
 
+.bl_radioCircle{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:inline-block;cursor:pointer;}
+.bl_radioCircle__input{position:absolute;opacity:0;cursor:pointer;height:0;width:0;}
+.bl_radioCircle__check{border:2px solid #d1d1d1;width:18px;height:18px;display:inline-block;position:relative;border-radius:50%;vertical-align:middle;}
+.bl_radioCircle__check:after{content:"";display:block;width:10px;height:10px;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1;}
+.bl_radioCircle__input:checked ~ .bl_radioCircle__check{border-color:#426B1F;}
+.bl_radioCircle__input:checked ~ .bl_radioCircle__check:after{background:#426B1F;}
 
-
+.bl_checkBx{text-align:center;display:inline-flex;align-items:center;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.bl_checkBx__input{position:absolute;opacity:0;cursor:pointer;height:0;width:0;}
+.bl_checkBx__check{display:inline-block;height:25px;width:25px;border:solid #D1D1D1;position:relative;vertical-align:middle;border-radius:5px;}
+.bl_checkBx__input:checked ~ .bl_checkBx__check{background:#426B1F;border-color:#426B1F;}
+.bl_checkBx__input:checked ~ .bl_checkBx__check:after{border-color:#fff;}
+.bl_checkBx__check:after{content:"";position:absolute;left:50%;top:50%;width:5px;height:10px;border:solid #D1D1D1;border-width:0 3px 3px 0;transform:translate(-50%, -62%) rotate(45deg);}
+.bl_checkBx__input:checked ~ .bl_checkBx__check:after{display:block;}
 
 
 
@@ -81,6 +94,7 @@ button:disabled{background:#fff;border:1px solid #888;color:#888;cursor:default;
 .bl_popupWrap{position:relative;}
 
 input[type=date].el_input__lightblue,.el_input__lightblue{background-color:#F4F6FA;}/* 포커스 됐을 때, 배경색 변경 유지를 위해 */
+input[type=date].hp_inputBack,.hp_inputBack{background-color:#eee;border:none;}
 
 .hp_dpNone{display:none!important;}
 .hp_dpInblock{display:inline-block!important;}
@@ -100,6 +114,8 @@ input[type=date].el_input__lightblue,.el_input__lightblue{background-color:#F4F6
 .hp_keepAll{word-break:keep-all;}
 .hp_breakAll{word-break:break-all;}
 .hp_ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle;}
+.hp_ellipsis2{white-space:unset;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.hp_ellipsis3{white-space:unset;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;}
 .hp_overVisible{overflow:visible!important;}
 .hp_scrollX{overflow-x:scroll!important;}
 .hp_scrollY{overflow-y:scroll!important;}
@@ -129,6 +145,7 @@ input[type=date].el_input__lightblue,.el_input__lightblue{background-color:#F4F6
 .hp_w100{width:100%!important;}
 .hp_w70px{width:70px!important;}
 .hp_w120px{width:120px!important;}
+.hp_w200px{width:200px!important;}
 
 .hp_hAuto{height:auto!important;}
 .hp_h100{height:100%!important;}
@@ -160,6 +177,9 @@ input[type=date].el_input__lightblue,.el_input__lightblue{background-color:#F4F6
 .hp_bbnone{border-bottom:none!important;}
 .hp_blnone{border-left:none!important;}
 
+.hp_bordDE{border:1px solid #dedede;}
+.hp_bordDashTDE2{border-top:2px dashed #dedede;}
+
 .hp_0Color{color:#000!important;}
 .hp_7Color{color:#777!important;}
 .hp_pointColor{color:#426B1F!important;}
@@ -175,6 +195,7 @@ input[type=date].el_input__lightblue,.el_input__lightblue{background-color:#F4F6
 .hp_padding30{padding:30px!important;}
 .hp_padding40{padding:40px!important;}
 .hp_padding50{padding:50px!important;}
+.hp_padding70{padding:70px!important;}
 .hp_p5-10{padding:5px 10px!important;}
 .hp_p10-5{padding:10px 5px!important;}
 .hp_pt0{padding-top:0!important;}

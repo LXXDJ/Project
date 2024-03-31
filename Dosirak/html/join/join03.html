@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/common/reset.css"/>
+    <link rel="stylesheet" href="/css/common/base.css"/>
+    <link rel="stylesheet" href="/css/common/common.css"/>
+    <link rel="stylesheet" href="/css/join.css"/>
+</head>
+<body>    
+    <div class="ly_all bl_all">
+        <div class="ly_midWD ly_inner02">
+            <h2 class="el_lv1Head">회원가입</h2>
+            <ol class="bl_joinStep ly_spaceBetween hp_mt50">
+                <li class="bl_joinStep__cont">약관동의</li>
+                <li class="bl_joinStep__cont">필수정보 입력</li>
+                <li class="bl_joinStep__cont hp_active">선택정보 입력</li>
+                <li class="bl_joinStep__cont">가입완료</li>
+            </ol>
+            <div class="hp_bordDE hp_padding50 hp_mt50">
+                <table class="bl_joinTB">
+                    <caption class="WA">선택정보 입력</caption>
+                    <colgroup>
+                        <col style="width:120px"/>
+                        <col style="width:*"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><label for="">마케팅정보 <br/>수신동의</label></th>
+                            <td colspan="3">
+                                <label class="bl_checkBx">
+                                    <input type="checkbox" class="bl_checkBx__input">
+                                    <span class="bl_checkBx__check"></span>
+                                    <span class="hp_ml5">문자</span>
+                                </label>
+                                <label class="bl_checkBx hp_ml30">
+                                    <input type="checkbox" class="bl_checkBx__input">
+                                    <span class="bl_checkBx__check"></span>
+                                    <span class="hp_ml5">이메일</span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="">주소</label></th>
+                            <td>
+                                <div class="ly_flex">
+                                    <input type="text" id="" class="el_btnM hp_inputBack hp_w100" name="" value="" placeholder="영문 + 숫자 혼합, 8 ~ 20자 이내" title="비밀번호 입력"/>
+                                    <input type="button" id="" class="el_btnM el_btnPointBack" name="" value="우편번호 검색"/>
+                                </div>
+                                <input type="text" id="" class="el_btnM hp_inputBack hp_w100 hp_mt10" name="" value="" placeholder="기본 주소" title="기본 주소 입력"/>
+                                <input type="text" id="" class="el_btnM hp_inputBack hp_w100 hp_mt10" name="" value="" placeholder="상세 주소" title="상세 주소 입력"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="el_btnM el_btnPointBack hp_w100 hp_br5 hp_mt70">다음</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

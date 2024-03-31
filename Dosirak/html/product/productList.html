@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/common/reset.css"/>
+    <link rel="stylesheet" href="/css/common/base.css"/>
+    <link rel="stylesheet" href="/css/common/common.css"/>
+    <link rel="stylesheet" href="/css/product.css"/>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            // tab
+            let categoryLength = $(".bl_pdCategory__cont").length;
+            let categoryWD = 100 / categoryLength;
+            $(".bl_pdCategory__cont").css("width", categoryWD + "%");
+
+            $(".bl_pdCategory__btn").click(function(){
+                $(".bl_pdCategory__btn").removeClass("hp_active")
+                $(this).addClass("hp_active");
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="ly_all bl_all">
+        <div class="ly_maxWD ly_inner02">
+            <h2 class="el_lv1Head">전체보기</h2>
+            <ul class="bl_pdCategory ly_midWD ly_spaceBetween">
+                <li class="bl_pdCategory__cont">
+                    <a class="bl_pdCategory__btn" href="">정성도시락</a>
+                </li>
+                <li class="bl_pdCategory__cont">
+                    <a class="bl_pdCategory__btn" href="">건강도시락</a>
+                </li>
+                <li class="bl_pdCategory__cont">
+                    <a class="bl_pdCategory__btn" href="">맞춤도시락</a>
+                </li>
+                <li class="bl_pdCategory__cont">
+                    <a class="bl_pdCategory__btn" href="">간편식</a>
+                </li>
+            </ul>
+            <ul class="bl_pdList ly_flex ly_flexWrap hp_mt70">
+                <li class="bl_pdList__wrap">
+                    <a class="bl_pdList__cont" href="">
+                        <img class="bl_pdList__img" src="/img/sample/img01.jpg" alt=""/>
+                        <h3 class="bl_pdList__ttl hp_ellipsis">[맞춤] 맞춤도시락</h3>
+                        <p class="bl_pdList__txt hp_ellipsis hp_ellipsis2">직접 원하는 메뉴를 담아보세요!</p>
+                        <p class="bl_pdList__price">기본가 7,000원</p>
+                    </a>
+                </li>
+                <li class="bl_pdList__wrap">
+                    <a class="bl_pdList__cont" href="">
+                        <img class="bl_pdList__img" src="/img/sample/img02.jpg" alt=""/>
+                        <h3 class="bl_pdList__ttl hp_ellipsis">[정성] 맞춤도시락</h3>
+                        <p class="bl_pdList__txt hp_ellipsis hp_ellipsis2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, iusto?</p>
+                        <p class="bl_pdList__price">7,000원</p>
+                    </a>
+                </li>
+                <li class="bl_pdList__wrap">
+                    <a class="bl_pdList__cont" href="">
+                        <img class="bl_pdList__img" src="/img/sample/img03.jpg" alt=""/>
+                        <h3 class="bl_pdList__ttl hp_ellipsis">[정성] 맞춤도시락 맞춤도시락맞춤도시락맞춤도시락</h3>
+                        <p class="bl_pdList__txt hp_ellipsis hp_ellipsis2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente ea impedit reprehenderit illo. Mollitia perferendis corrupti enim ipsam nemo aliquam accusantium corporis repudiandae nesciunt.</p>
+                        <p class="bl_pdList__price">13,000원</p>
+                    </a>
+                </li>
+                <li class="bl_pdList__wrap">
+                    <a class="bl_pdList__cont" href="">
+                        <img class="bl_pdList__img" src="/img/sample/img01.jpg" alt=""/>
+                        <h3 class="bl_pdList__ttl hp_ellipsis">[맞춤] 맞춤도시락</h3>
+                        <p class="bl_pdList__txt hp_ellipsis hp_ellipsis2">직접 원하는 메뉴를 담아보세요!</p>
+                        <p class="bl_pdList__price">기본가 7,000원</p>
+                    </a>
+                </li>
+                <li class="bl_pdList__wrap">
+                    <a class="bl_pdList__cont" href="">
+                        <img class="bl_pdList__img" src="/img/sample/img02.jpg" alt=""/>
+                        <h3 class="bl_pdList__ttl hp_ellipsis">[정성] 맞춤도시락</h3>
+                        <p class="bl_pdList__txt hp_ellipsis hp_ellipsis2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, iusto?</p>
+                        <p class="bl_pdList__price">7,000원</p>
+                    </a>
+                </li>
+                <li class="bl_pdList__wrap">
+                    <a class="bl_pdList__cont" href="">
+                        <img class="bl_pdList__img" src="/img/sample/img03.jpg" alt=""/>
+                        <h3 class="bl_pdList__ttl hp_ellipsis">[정성] 맞춤도시락 맞춤도시락맞춤도시락맞춤도시락</h3>
+                        <p class="bl_pdList__txt hp_ellipsis hp_ellipsis2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente ea impedit reprehenderit illo. Mollitia perferendis corrupti enim ipsam nemo aliquam accusantium corporis repudiandae nesciunt.</p>
+                        <p class="bl_pdList__price">13,000원</p>
+                    </a>
+                </li>
+                <li class="bl_pdList__wrap">
+                    <a class="bl_pdList__cont" href="">
+                        <img class="bl_pdList__img" src="/img/sample/img01.jpg" alt=""/>
+                        <h3 class="bl_pdList__ttl hp_ellipsis">[맞춤] 맞춤도시락</h3>
+                        <p class="bl_pdList__txt hp_ellipsis hp_ellipsis2">직접 원하는 메뉴를 담아보세요!</p>
+                        <p class="bl_pdList__price">기본가 7,000원</p>
+                    </a>
+                </li>
+                <li class="bl_pdList__wrap">
+                    <a class="bl_pdList__cont" href="">
+                        <img class="bl_pdList__img" src="/img/sample/img02.jpg" alt=""/>
+                        <h3 class="bl_pdList__ttl hp_ellipsis">[정성] 맞춤도시락</h3>
+                        <p class="bl_pdList__txt hp_ellipsis hp_ellipsis2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, iusto?</p>
+                        <p class="bl_pdList__price">7,000원</p>
+                    </a>
+                </li>
+                <li class="bl_pdList__wrap">
+                    <a class="bl_pdList__cont" href="">
+                        <img class="bl_pdList__img" src="/img/sample/img03.jpg" alt=""/>
+                        <h3 class="bl_pdList__ttl hp_ellipsis">[정성] 맞춤도시락 맞춤도시락맞춤도시락맞춤도시락</h3>
+                        <p class="bl_pdList__txt hp_ellipsis hp_ellipsis2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente ea impedit reprehenderit illo. Mollitia perferendis corrupti enim ipsam nemo aliquam accusantium corporis repudiandae nesciunt.</p>
+                        <p class="bl_pdList__price">13,000원</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="bl_paging hp_mt70">
+                <li><a class="bl_pagingIcon__prev" href=""><p class="WA">이전 페이지로</p></a></li>
+                <li><a class="hp_active" href="">1</a></li>
+                <li><a class="" href="">2</a></li>
+                <li><a class="" href="">3</a></li>
+                <li><a class="" href="">4</a></li>
+                <li><a class="" href="">5</a></li>
+                <li><a class="bl_pagingIcon__next" href=""><p class="WA">다음 페이지로</p></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
