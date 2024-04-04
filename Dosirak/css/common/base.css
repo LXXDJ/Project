@@ -6,7 +6,8 @@
 /* 공통 */
 .ly_all{min-height:100vh;position:relative;padding-top:75px;padding-bottom:550px;}
 .ly_maxWD{width:1280px;margin-left:auto;margin-right:auto;}
-.ly_midWD{width:700px;margin-left:auto;margin-right:auto;}
+.ly_midWD{width:650px;margin-left:auto;margin-right:auto;}
+.ly_midWDside{width:750px;margin-left:auto;margin-right:auto;}
 .ly_inner01{padding:0 30px;}
 .ly_inner02{padding:70px 30px 150px;}
 
@@ -143,6 +144,9 @@ input[type=date].hp_inputBack,.hp_inputBack{background-color:#eee;border:none;}
 .hp_w70px{width:70px!important;}
 .hp_w120px{width:120px!important;}
 .hp_w200px{width:200px!important;}
+.hp_w500px{width:500px!important;}
+.hp_w600px{width:600px!important;}
+.hp_w650px{width:650px!important;}
 
 .hp_hAuto{height:auto!important;}
 .hp_h100{height:100%!important;}
@@ -177,11 +181,13 @@ input[type=date].hp_inputBack,.hp_inputBack{background-color:#eee;border:none;}
 .hp_bordDE{border:1px solid #dedede;}
 .hp_bordDashTDE2{border-top:2px dashed #dedede;}
 
+.hp_fColor{color:#fff!important;}
 .hp_0Color{color:#000!important;}
 .hp_7Color{color:#777!important;}
 .hp_pointColor{color:#426B1F!important;}
 
 .hp_fBack{background:#fff!important;}
+.hp_pointBack{background:#426B1F!important;}
 
 .hp_padding0{padding:0!important;}
 .hp_padding2{padding:2px!important;}

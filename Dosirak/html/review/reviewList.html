@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="/css/common/reset.css"/>
     <link rel="stylesheet" href="/css/common/base.css"/>
     <link rel="stylesheet" href="/css/common/common.css"/>
-    <script src="/js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="/css/review.css"/>
+    <script src="/js/common/jquery-3.7.1.min.js"></script>
     <script>
-        $(function(){
+        $(function () {
             // tab
             let tabLength = $(".bl_tabBtn").length;
             let tabWD = 100 / tabLength;
             $(".bl_tabBtn").css("width", tabWD + "%");
-            for(let i=0;i<tabLength;i++) $(".bl_tabWrap:nth-of-type("+ (i+1) +") .bl_tabBtn").css("margin-left", (tabWD*i) + "%");
+            for (let i = 0; i < tabLength; i++) $(".bl_tabWrap:nth-of-type(" + (i + 1) + ") .bl_tabBtn").css("margin-left", (tabWD * i) + "%");
 
-            $(".bl_tabBtn").click(function(){
+            $(".bl_tabBtn").click(function () {
                 $(".bl_tabBtn").removeClass("hp_active")
                 $(this).addClass("hp_active");
             });
@@ -120,13 +121,13 @@
                                     <tbody>
                                         <tr>
                                             <td>배송완료</td>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
+                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis hp_w500px" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
                                             <td>2024.01.23</td>
                                             <td><button type="button" class="el_btnS hp_br5 el_btnPointBord">등록하기</button></td>
                                         </tr>
                                         <tr>
                                             <td>배송중</td>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
+                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis hp_w500px" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
                                             <td>2024.01.23</td>
                                             <td><button type="button" class="el_btnS hp_br5 el_btnPointBord" disabled>등록하기</button></td>
                                         </tr>
@@ -217,54 +218,19 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
+                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis hp_w650px" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
                                             <td>2024.01.23</td>
                                             <td>답변전</td>
                                         </tr>
                                         <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
+                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis hp_w650px" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
                                             <td>2024.01.23</td>
                                             <td>답변완료</td>
                                         </tr>
                                         <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
+                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis hp_w650px" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
                                             <td>2024.01.23</td>
-                                            <td>답변완료</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
-                                            <td>2024.01.23</td>
-                                            <td>답변완료</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
-                                            <td>2024.01.23</td>
-                                            <td>답변완료</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
-                                            <td>2024.01.23</td>
-                                            <td>답변완료</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
-                                            <td>2024.01.23</td>
-                                            <td>답변완료</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
-                                            <td>2024.01.23</td>
-                                            <td>답변완료</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
-                                            <td>2024.01.23</td>
-                                            <td>답변완료</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
-                                            <td>2024.01.23</td>
-                                            <td>답변완료</td>
+                                            <td>답변전</td>
                                         </tr>
                                     </tbody>
                                 </table>

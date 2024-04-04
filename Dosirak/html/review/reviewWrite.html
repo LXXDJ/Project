@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="/css/common/reset.css"/>
     <link rel="stylesheet" href="/css/common/base.css"/>
     <link rel="stylesheet" href="/css/common/common.css"/>
-    <script src="/js/jquery-3.7.1.min.js"></script>
-    <script>
-    </script>
+    <link rel="stylesheet" href="/css/customer.css"/>
+    <script src="/js/recommendation.js"></script>
 </head>
 <body>    
     <div class="ly_all bl_all">
@@ -30,7 +29,8 @@
                                 <th scope="row"><label for="">상품명</label></th>
                                 <td>
                                     <div class="ly_spaceBetween ly_fitemC">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, unde.
-                                        <button type="button" class="el_btnS hp_br5 el_btnPointBack">추천</button>
+                                        <!-- <button type="button" id="myImage" onclick="changeImage()"><img src="/img/icon/good.png"></button> -->
+                                        <img src="/img/icon/good.png" id="myImage" onclick="changeImage()">
                                     </div>
                                 </td>
                             </tr>
@@ -43,8 +43,13 @@
                             </tr>
                             <tr>
                                 <th scope="row">첨부파일</th>
-                                <td></td>
-                            </tr> 
+                                <td>
+                                    <label for="file">
+                                        <div class="btn-upload">파일 업로드</div>
+                                    </label>
+                                    <input type="file" name="file" id="file" class="file" multiple>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     <ul class="ly_flexC hp_mt70">

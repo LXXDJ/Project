@@ -37,10 +37,10 @@
 .bl_TBsearch td .bl_radioBxArea{width:100%;margin-right:5px;}
 /* List */
 .bl_TBList{border-bottom:1px solid #dedede;}
-.bl_TBList thead{}
+.bl_TBList thead{background:#F9F9F9;}
 .bl_TBList tr{border-top:1px solid #dedede;}
 .bl_TBList th,.bl_TBList td{padding:20px 10px;text-align:center;}
-.bl_TBList__ttl a{display:block;text-align:left;width:520px;}
+.bl_TBList__ttl a{display:block;text-align:left;/*width:520px;*/}
 .bl_TBList__ttl a:hover{color:#426B1F;}
 .bl_TBList .bl_TBList__empty{padding:50px 0;color:#aaa;}
 .bl_TBList__empty::before{content:"";display:block;width:70px;height:70px;background:url("/img/icon/bento.png")no-repeat center/cover;margin:0 auto 20px;}

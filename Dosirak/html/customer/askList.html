@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>도시樂</title>
     <link rel="stylesheet" href="/css/common/reset.css"/>
     <link rel="stylesheet" href="/css/common/base.css"/>
     <link rel="stylesheet" href="/css/common/common.css"/>
@@ -13,108 +13,114 @@
         <div class="bl_sideMenuBack">
             <div class="ly_maxWD ly_flex">
                 <section class="bl_sideMenu">
-                    <h2 class="bl_sideMenu__head hp_pointColor">고객센터</h2>
+                    <a class="bl_sideMenu__head hp_pointColor" href="/html/customer/customer_main.html">고객센터</a>
                     <ul class="bl_sideMenu__cont hp_mt20">
-                        <li class=""><a class="" href="">공지사항</a></li>
-                        <li class=""><a class="" href="">자주묻는질문</a></li>
-                        <li class=""><a class="" href="">1:1 문의하기</a></li>
-                        <li class=""><a class="" href="">1:1 문의내역</a></li>
+                        <li class=""><a class="" href="/html/customer/notice.html">공지사항</a></li>
+                        <li class=""><a class="" href="/html/customer/qnaList.html">자주 묻는 질문</a></li>
+                        <li class=""><a class="" href="/html/customer/askWrite.html">1:1 문의하기</a></li>
+                        <li class=""><a class="" href="/html/customer/askList.html">1:1 문의내역</a></li>
                     </ul>
                 </section>
                 <div class="ly_inner02 ly_fgrow1 hp_fBack">
-                    <h2 class="el_lv1Head">1:1 문의내역</h2>
-                    <table class="bl_TBsearch hp_mt50">
-                        <caption class="WA">검색</caption>
-                        <colgroup>
-                            <col style="width:200px"/>
-                            <col style="width:*"/>
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">조회기간 설정</th>
-                                <td class="hp_pt20">
-                                    <div class="ly_spaceBetween ly_fitemC">
-                                        <div class="ly_spaceBetween ly_fgrow1">
-                                            <label class="bl_radioBxArea">
-                                                <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="" checked>
-                                                <span class="bl_radioBxArea__txt">오늘</span>
-                                            </label>
-                                            <label class="bl_radioBxArea">
-                                                <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
-                                                <span class="bl_radioBxArea__txt">1주일</span>
-                                            </label>
-                                            <label class="bl_radioBxArea">
-                                                <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
-                                                <span class="bl_radioBxArea__txt">1개월</span>
-                                            </label>
-                                            <label class="bl_radioBxArea">
-                                                <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
-                                                <span class="bl_radioBxArea__txt">3개월</span>
-                                            </label>
-                                            <label class="bl_radioBxArea">
-                                                <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
-                                                <span class="bl_radioBxArea__txt">6개월</span>
-                                            </label>
-                                            <label class="bl_radioBxArea">
-                                                <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
-                                                <span class="bl_radioBxArea__txt">1년</span>
-                                            </label>
+                    <div class="ly_midWDside">
+                        <h2 class="el_lv1Head">1:1 문의내역</h2>
+                        <table class="bl_TBsearch hp_mt50">
+                            <caption class="WA">검색</caption>
+                            <colgroup>
+                                <col style="width:120px"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">조회기간</th>
+                                    <td class="hp_pt10">
+                                        <div class="ly_spaceBetween ly_fitemC">
+                                            <div class="ly_spaceBetween ly_fgrow1">
+                                                <label class="bl_radioBxArea">
+                                                    <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="" checked>
+                                                    <span class="bl_radioBxArea__txt">오늘</span>
+                                                </label>
+                                                <label class="bl_radioBxArea">
+                                                    <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
+                                                    <span class="bl_radioBxArea__txt">1주일</span>
+                                                </label>
+                                                <label class="bl_radioBxArea">
+                                                    <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
+                                                    <span class="bl_radioBxArea__txt">1개월</span>
+                                                </label>
+                                                <label class="bl_radioBxArea">
+                                                    <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
+                                                    <span class="bl_radioBxArea__txt">3개월</span>
+                                                </label>
+                                                <label class="bl_radioBxArea">
+                                                    <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
+                                                    <span class="bl_radioBxArea__txt">6개월</span>
+                                                </label>
+                                                <label class="bl_radioBxArea">
+                                                    <input class="bl_radioBxArea__input" type="radio" name="searchPeriod" value="">
+                                                    <span class="bl_radioBxArea__txt">1년</span>
+                                                </label>
+                                            </div>
+                                            <div class="ly_flex ly_fitemC hp_ml10">
+                                                <label for="" class="hp_w120px"><input type="date" id="" class="hp_w100" name="" value="" title="검색 시작날짜 선택"/></label>
+                                                <span class="hp_ml10 hp_mr10"> ~ </span>
+                                                <label for="" class="hp_w120px"><input type="date" id="" class="hp_w100" name="" value="" title="검색 종료날짜 선택"/></label>
+                                            </div>
                                         </div>
-                                        <div class="ly_flex ly_fitemC hp_ml10">
-                                            <label for="" class="hp_w120px"><input type="date" id="" class="hp_w100" name="" value="" title="검색 시작날짜 선택"/></label>
-                                            <span class="hp_ml10 hp_mr10"> ~ </span>
-                                            <label for="" class="hp_w120px"><input type="date" id="" class="hp_w100" name="" value="" title="검색 종료날짜 선택"/></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class=""><label for="">카테고리</label></th>
+                                    <td class="hp_pt5">
+                                        <div class="ly_flex">
+                                            <select id="" class="hp_w120px" name="">
+                                                <option value="">유형 선택</option>
+                                                <option value="">회원</option>
+                                                <option value="">구매/결제</option>
+                                                <option value="">배송/반품</option>
+                                                <option value="">취소/교환/환불</option>
+                                                <option value="">서비스 기타</option>
+                                            </select>
+                                            <label for="" class="ly_fgrow1 hp_ml5"><input type="text" id="" class="hp_w100" name="" value="" title="검색어 입력"/></label>
+                                            <label for="" class="hp_ml5 hp_w70px"><input type="button" id="" class="hp_w100 el_btnPointBack" name="" value="검색" title="검색 버튼"/></label>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><label for="">카테고리 설정</label></th>
-                                <td class="hp_pb20">
-                                    <div class="ly_flex">
-                                        <select id="" class="hp_w120px" name="">
-                                            <option value="">유형 선택</option>
-                                        </select>
-                                        <label for="" class="ly_fgrow1 hp_ml5"><input type="text" id="" class="hp_w100" name="" value="" title="검색어 입력"/></label>
-                                        <label for="" class="hp_ml5 hp_w70px"><input type="button" id="" class="hp_w100 el_btnPointBack" name="" value="검색" title="검색 버튼"/></label>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="bl_TBList">
-                        <caption class="WA">검색</caption>
-                        <colgroup>
-                            <col style="width:150px"/>
-                            <col style="width:*"/>
-                            <col style="width:150px"/>
-                            <col style="width:150px"/>
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col">분류</th>
-                                <th scope="col">제목</th>
-                                <th scope="col">작성일</th>
-                                <th scope="col">답변상태</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>배송/반품</td>
-                                <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</a></td>
-                                <td>2024.01.23</td>
-                                <td>답변완료</td>
-                            </tr>
-                            <tr>
-                                <td class="bl_TBList__empty" colspan="4">등록된 문의내역이 없습니다.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <ul class="bl_paging hp_mt70">
-                        <li><a class="bl_pagingIcon__prev" href=""><p class="WA">이전 페이지로</p></a></li>
-                        <li><a class="hp_active" href="">1</a></li>
-                        <li><a class="bl_pagingIcon__next" href=""><p class="WA">다음 페이지로</p></a></li>
-                    </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="bl_TBList">
+                            <caption class="WA">검색</caption>
+                            <colgroup>
+                                <col style="width:100px"/>
+                                <col style="width:*"/>
+                                <col style="width:100px"/>
+                                <col style="width:100px"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">분류</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">작성일</th>
+                                    <th scope="col">답변상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>배송/반품</td>
+                                    <td class="bl_TBList__ttl"><a class="hp_ellipsis" href="/html/customer/askView.html">물품이 잘못 배송됐습니다!!</a></td>
+                                    <td>2024.01.23</td>
+                                    <td>답변완료</td>
+                                </tr>
+                                <!-- <tr>
+                                    <td class="bl_TBList__empty" colspan="4">등록된 문의내역이 없습니다.</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                        <ul class="bl_paging hp_mt70">
+                            <li><a class="bl_pagingIcon__prev" href=""><p class="WA">이전 페이지로</p></a></li>
+                            <li><a class="hp_active" href="">1</a></li>
+                            <li><a class="bl_pagingIcon__next" href=""><p class="WA">다음 페이지로</p></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

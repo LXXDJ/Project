@@ -1,0 +1,22 @@
+.btn-upload {
+    width: 150px;
+    height: 40px;
+    background-color: #426B1F;
+    border: 1px solid #426B1F;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #dedede;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        border: 1px solid #777;
+        background-color: #777;
+        color: #dedede;
+    }
+}
+
+.file {
+    display: none;
+}
