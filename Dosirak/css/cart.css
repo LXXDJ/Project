@@ -64,14 +64,6 @@
     border-radius: 5px;
 }
 
-.bl_TBList__empty {
-    display: none;
-}
-
 .show_empty_message .bl_TBList__empty {
     visibility: visible;
-}
-
-.hide_empty_row {
-    display: block;
 }

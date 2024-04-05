@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>환불 상세보기</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/common.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <!-- navbar -->
+        <div id="layoutSidenav">
+            <!-- layoutSidenav_nav -->
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">환불 상세보기</h1>
+                        <table class="datatable-table mt-4">
+                            <colgroup>
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">환불코드</th>
+                                    <td>1</td>
+                                    <th scope="row">환불사유</th>
+                                    <td>회원 귀책사유 / 회사 귀책사유</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">주문코드</th>
+                                    <td>8390275164</td>
+                                    <th scope="row">회원이름(회원아이디)</th>
+                                    <td>김철수(abcd1234)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">환불날짜</th>
+                                    <td>2024-02-02</td>
+                                    <th scope="row">환불상태</th>
+                                    <td>환불진행중</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">결제방법</th>
+                                    <td colspan="3">카카오페이</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">이미지파일</th>
+                                    <td colspan="3">
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">환불금액</th>
+                                    <td colspan="3">
+                                        <div class="justify-content-between d-flex align-items-center">
+                                            <p>총 결제금액</p>
+                                            <p>123,456원</p>
+                                        </div>
+                                        <div class="justify-content-between d-flex align-items-center">
+                                            <p>배송비</p>
+                                            <p>123,456원</p>
+                                        </div>
+                                        <div class="justify-content-between d-flex align-items-center">
+                                            <p class="text-primary fw-bold">총 환불금액</p>
+                                            <p class="text-primary fw-bold">123,456원</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="editBtn" style="text-align: right;">
+                            <button type="button" class="btn btn-primary">승인</button>
+                            <button type="button" class="btn btn-secondary">거절</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="/project/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="/project/js/datatables-simple-demo.js"></script>
+    </body>
+</html>

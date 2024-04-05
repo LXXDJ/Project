@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>상품 상세보기</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/common.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <!-- navbar -->
+        <div id="layoutSidenav">
+            <!-- layoutSidenav_nav -->
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">상품 상세보기</h1>
+                        <table class="datatable-table mt-4">
+                            <colgroup>
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
+                            </colgroup>
+                            <tbody>
+                                <!-- 보기, 수정 -->
+                                <tr>
+                                    <th scope="">상품코드</th>
+                                    <td colspan="3">1</td>
+                                </tr>
+                                <!-- // 보기, 수정 -->
+                                <tr>
+                                    <th scope="row">상품이름</th>
+                                    <td colspan="3"><input type="text" value="상품이름"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">판매상태</th>
+                                    <td>
+                                        <select class="datatable-selector">
+                                            <option value="">판매상태 선택</option>
+                                            <option value="">판매준비중</option>
+                                            <option value="">판매중</option>
+                                            <option value="">절판</option>
+                                            <option value="">판매중단</option>
+                                        </select>
+                                    </td>
+                                    <th scope="row">상품가격</th>
+                                    <td><input type="text" value="123456"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상품분류</th>
+                                    <td colspan="3">
+                                        <select class="datatable-selector">
+                                            <option value="">상품분류 선택</option>
+                                            <option value="">건강도시락</option>
+                                            <option value="">정성도시락</option>
+                                            <option value="">간편식</option>
+                                        </select>
+                                        <!-- <select class="datatable-selector">
+                                            <option value="">소분류 선택</option>
+                                            <option value="">암환자회복식단</option>
+                                            <option value="">신장관리식단</option>
+                                            <option value="">혈압관리식단</option>
+                                            <option value="">혈당관리식단</option>
+                                        </select>
+                                        <select class="datatable-selector">
+                                            <option value="">소분류 선택</option>
+                                            <option value="">샐러드</option>
+                                            <option value="">닭가슴살</option>
+                                        </select> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">한줄설명</th>
+                                    <td colspan="3"><input type="text" value="한줄설명"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">파일첨부</th>
+                                    <td colspan="3"><input type="file"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="editBtn" style="text-align: right;">
+                            <!-- 등록 -->
+                            <!-- <button type="button" class="btn btn-primary">등록</button>
+                            <button type="button" class="btn btn-secondary">취소</button> -->
+                            <!-- 수정 -->
+                            <button type="button" class="btn btn-primary">수정</button>
+                            <button type="button" class="btn btn-secondary">삭제</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="/js/datatables-simple-demo.js"></script>
+    </body>
+</html>

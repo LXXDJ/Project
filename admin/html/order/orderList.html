@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>주문결제</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/common.css" rel="stylesheet" />
+        <link href="/css/order.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <!-- navbar -->
+        <div id="layoutSidenav">
+            <!-- layoutSidenav_nav -->
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">주문결제</h1>
+                        <div class="card mb-4 mt-4">
+                            <div class="card-header justify-content-between d-flex align-items-center">
+                                <i class="fas fa-table me-1"></i>
+                                <div>
+                                    <label>
+                                        <select class="datatable-selector">
+                                            <option>주문상태 선택</option>
+                                            <option>주문실패</option>
+                                            <option>주문완료</option>
+                                            <option>구매확정</option>
+                                        </select>
+                                    </label>
+                                    <form class="d-none d-md-inline-block form-inline ms-auto me-0 my-2 my-md-0">
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                                            <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>주문코드</th>
+                                            <th>주문상태</th>
+                                            <th>주문인(회원아이디)</th>
+                                            <th>수령인</th>
+                                            <th>결제금액</th>
+                                            <th>결제날짜</th>
+                                            <th>결제상태</th>
+                                            <th>결제방법</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>주문코드</th>
+                                            <th>주문상태</th>
+                                            <th>주문인(회원아이디)</th>
+                                            <th>수령인</th>
+                                            <th>결제금액</th>
+                                            <th>결제날짜</th>
+                                            <th>결제상태</th>
+                                            <th>결제방법</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>8390275164</td>
+                                            <td>주문완료</td>
+                                            <td>김철수(abcd1234)</td>
+                                            <td>김영희</td>
+                                            <td>123,456원</td>
+                                            <td>2024-04-05</td>
+                                            <td>결제성공</td>
+                                            <td>카카오페이</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="/js/datatables-simple-demo.js"></script>
+    </body>
+</html>

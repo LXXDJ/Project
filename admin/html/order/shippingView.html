@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>공지사항 등록</title>
+        <title>배송 상세보기</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="/css/styles.css" rel="stylesheet" />
-        <link href="/css/common.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -19,43 +18,41 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">공지사항 등록</h1>
+                        <h1 class="mt-4">배송 상세보기</h1>
                         <table class="datatable-table mt-4">
                             <colgroup>
-                                <col style="width:15%"/>
-                                <!-- <col style="width:15%"/> -->
-                                <!-- <col style="width:*%"/>
-                                <col style="width:*%"/> -->
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
                             </colgroup>
                             <tbody>
-                                <!-- 원래 등록된 글 클릭해서 입장시 -->
                                 <tr>
-                                    <th scope="row">공지코드</th>
-                                    <td>1</td>
-                                    <th scope="row">관리자아이디</th>
-                                    <td>abcd1234</td>
-                                </tr>
-                                <!-- // 원래 등록된 글 클릭해서 입장시 -->
-                                <tr>
-                                    <th scope="row">공지날짜</th>
-                                    <td colspan="3">2024-12-12</td>
+                                    <th scope="row">주문코드</th>
+                                    <td>12134</td>
+                                    <th scope="row">운송장번호</th>
+                                    <td>4689789</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">공지제목</label></th>
-                                    <td colspan="3"><input class="hp_wd100" id="" type="text" placeholder="제목 입력"/></td>
+                                    <th scope="row">배송상태</th>
+                                    <td>배송중</td>
+                                    <th scope="row">회원이름(회원아이디)</th>
+                                    <td>김철수(abcd1234)</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="">공지내용</label></th>
-                                    <td colspan="3"><textarea class="hp_wd100 hp_minH500" placeholder="내용 입력"></textarea></td>
+                                    <th scope="row">수령인</th>
+                                    <td>김영희</td>
+                                    <th scope="row">연락처</th>
+                                    <td>01023456789</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">배송지</th>
+                                    <td colspan="3"></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="editBtn text-end">
-                            <!-- 원래 등록된 글 클릭해서 입장시 -->
-                            <button type="button" class="btn btn-primary">수정</button>
-                            <!-- 새글 등록시 -->
-                            <button type="button" class="btn btn-primary">등록</button>
-                            <button type="button" class="btn btn-secondary" onclick="location.href='/html/customer/noticeList.html'">목록</button>
+                        <div class="editBtn" style="text-align: right;">
+                            <button type="button" class="btn btn-secondary">목록</button>
                         </div>
                     </div>
                 </main>

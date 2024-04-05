@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>리뷰 상세보기</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <!-- navbar -->
+        <div id="layoutSidenav">
+            <!-- layoutSidenav_nav -->
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">맞춤도시락 등록</h1>
+                        <table class="datatable-table mt-4">
+                            <colgroup>
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="">메뉴이름</label></th>
+                                    <td colspan="2"><input type="number" /></td>
+                                    <th scope="row"><label for="">추가금</label></th>
+                                    <td colspan="3"><input type="number" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">카테고리</th>
+                                    <td>123456</td>
+                                    <th scope="row"><label for="">메뉴분류</label></th>
+                                    <td>
+                                        <select class="datatable-selector">
+                                            <option value="">밥</option>
+                                            <option value="">메인</option>
+                                            <option value="">서브</option>
+                                            <option value="">김치</option>
+                                        </select>
+                                    </td>
+                                    <th scope="row"><label for="">판매상태</label></th>
+                                    <td>                                        
+                                        <select class="datatable-selector">
+                                            <option value="">T</option>
+                                            <option value="">F</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="">탄수화물</label></th>
+                                    <td><input type="number" /></td>
+                                    <th scope="row"><label for="">당류</label></th>
+                                    <td><input type="number" /></td>
+                                    <th scope="row"><label for="">단백질</label></th>
+                                    <td><input type="number" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="">지방</label></th>
+                                    <td><input type="number" /></td>
+                                    <th scope="row"><label for="">포화지방</label></th>
+                                    <td><input type="number" /></td>
+                                    <th scope="row"><label for="">트랜스지방</label></th>
+                                    <td><input type="number" /></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="">콜레스테롤</label></th>
+                                    <td><input type="number" /></td>
+                                    <th scope="row"><label for="">나트륨</label></th>
+                                    <td><input type="number" /></td>
+                                    <th scope="row"><label for="">칼로리</label></th>
+                                    <td><input type="number" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="editBtn" style="text-align: right;">
+                            <!-- 최초등록시 -->
+                            <button type="button" class="btn btn-primary">등록</button>
+                            <button type="button" class="btn btn-secondary">목록</button>
+                            <!-- // 최초등록시 -->
+                            <button type="button" class="btn btn-primary">수정</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="/js/datatables-simple-demo.js"></script>
+    </body>
+</html>

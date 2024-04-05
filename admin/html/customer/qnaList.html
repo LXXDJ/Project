@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>공지사항 관리</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/common.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <!-- navbar -->
+        <div id="layoutSidenav">
+            <!-- layoutSidenav_nav -->
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">자주 묻는 질문</h1>
+                        <div class="card mb-4 mt-4">
+                            <div class="card-header">
+                                <div class="justify-content-between d-flex align-items-center">
+                                    <a class="btn btn-primary" href="">새 질문 등록</a>
+                                    <div class="text-end">
+                                        <form class="d-none d-md-inline-block form-inline ms-auto me-0 my-2 my-md-0">
+                                            <div class="input-group">
+                                                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                                                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>질문코드</th>
+                                            <th>질문유형</th>
+                                            <th>질문제목</th>
+                                            <th>관리자아이디</th>
+                                            <th>삭제</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>질문코드</th>
+                                            <th>질문유형</th>
+                                            <th>질문제목</th>
+                                            <th>관리자아이디</th>
+                                            <th>삭제</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>회원</td>
+                                            <!-- 등록페이지로 이동, 등록 버튼을 수정 버튼으로 전환 -->
+                                            <td><a href="/html/customer/qnaWrite.html">아이디, 비밀번호를 잊어버렸습니다.</a></td>
+                                            <td>관리자</td>
+                                            <td><button type="button" class="btn btn-secondary btn-sm">삭제</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="/js/datatables-simple-demo.js"></script>
+    </body>
+</html>

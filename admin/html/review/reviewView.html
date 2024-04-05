@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>리뷰 상세보기</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/common.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <!-- navbar -->
+        <div id="layoutSidenav">
+            <!-- layoutSidenav_nav -->
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">리뷰 상세보기</h1>
+                        <table class="datatable-table mt-4">
+                            <colgroup>
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
+                                <col style="width:200px"/>
+                                <col style="width:*%"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">리뷰코드</th>
+                                    <td>1</td>
+                                    <th scope="row">주문상세코드</th>
+                                    <td>1234</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">회원아이디</th>
+                                    <td>abcd1234</td>
+                                    <th scope="row">추천상태</th>
+                                    <td>T</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">리뷰날짜</th>
+                                    <td colspan="3">2024년 03월 22일 00:00:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상품명</th>
+                                    <td colspan="3">Lorem ipsum dolor sit amet</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">리뷰내용</th>
+                                    <td colspan="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ex quia necessitatibus ratione dolore vel nesciunt quae repellat exercitationem? Neque, esse placeat! Est porro dolorem tempore quam itaque voluptate. Blanditiis?</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">이미지파일</th>
+                                    <td colspan="3">
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                        <img src="/img/review/review.jpg" alt=""/>
+                                    </td>
+                                </tr>
+                                <!-- 답변 등록전 -->
+                                <tr>
+                                    <th scope="row"><label for="">답변내용</label></th>
+                                    <td colspan="3"><textarea style="width:100%;min-height:150px;"></textarea></td>
+                                </tr>
+                                <!-- // 답변 등록전 -->
+                                <!-- 답변 등록후 -->
+                                <!-- <tr>
+                                    <th scope="row">답변코드</th>
+                                    <td>1</td>
+                                    <th scope="row">답변날짜</th>
+                                    <td>2024-02-02</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">관리자아이디</th>
+                                    <td colspan="3">abcd1234</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">답변내용</th>
+                                    <td colspan="3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, distinctio fugiat. Numquam iste nam soluta earum. Est placeat, aliquam tenetur deleniti quidem, voluptatum ea nemo quaerat animi laborum, at enim!</td>
+                                </tr> -->
+                                <!-- // 답변 등록후 -->
+                            </tbody>
+                        </table>
+                        <div class="editBtn text-end">
+                            <button type="button" class="btn btn-primary">답변등록</button>
+                            <button type="button" class="btn btn-secondary">리뷰삭제</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="/project/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="/project/js/datatables-simple-demo.js"></script>
+    </body>
+</html>

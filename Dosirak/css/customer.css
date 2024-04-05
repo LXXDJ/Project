@@ -20,3 +20,47 @@
 .file {
     display: none;
 }
+
+.el_lv1Sub{
+    font-size:26px;
+    font-weight: 600;
+}
+
+.el_lv1Sub2{
+    font-size: 30px; 
+    font-weight: 600; 
+    color: #426B1F;
+}
+
+.el_qnaBtn{
+    background:#426B1F;
+    border-radius: 25%;
+    border:1px solid #426B1F;
+    color:#fff;
+}
+
+.el_btnM2{
+    font-size:14px;
+    width:100px;
+    height:35px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    filter: drop-shadow(6px 6px 6px #c3c3c3);
+}
+
+.hp_br35{
+    border-radius:35px!important;
+}
+
+.el_btnQ{
+    font-size:14px;
+    text-align: center;
+    width: 130px;
+    padding:5px 10px;
+    &:hover {
+        border: 1px solid #426B1F;
+        background-color: #426B1F;
+        color: #dedede;
+    }
+}
