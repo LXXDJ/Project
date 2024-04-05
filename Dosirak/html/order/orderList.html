@@ -79,32 +79,89 @@
                         <caption class="WA">검색</caption>
                         <colgroup>
                             <col style="width:150px"/>
+                            <col style="width:150px"/>
                             <col style="width:*"/>
                             <col style="width:150px"/>
                             <col style="width:150px"/>
                         </colgroup>
                         <thead>
                             <tr>
-                                <th scope="col">결제일</th>
-                                <th scope="col">상품명</th>
-                                <th scope="col">배송상태</th>
-                                <th scope="col">리뷰작성</th>
+                                <th scope="col">결제날짜</th>
+                                <th scope="col">결제금액</th>
+                                <th scope="col">주문상세</th>
+                                <th scope="col">주문상태</th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>2024.01.23</td>
+                                <td>123,456원</td>
                                 <td class="bl_TBList__ttl">
+                                    <!-- 가장 상단 상품 하나만 표시 -->
                                     <a class="ly_flexC ly_fitemC" href="">
                                         <img class="bl_TBList__orderImg" src="/img/sample/img01.jpg" alt=""/>
-                                        <p class="hp_ellipsis hp_ellipsis3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur possimus cupiditate ab earum eius libero, voluptas omnis, iste nemo, blanditiis repellat illum assumenda similique? Quam exercitationem molestiae eveniet temporibus.</p>
+                                        <p class="hp_ellipsis hp_ellipsis3">여권지갑 여권케이스 여권커버 안티스키밍 RFID 차단</p>
                                     </a>
                                 </td>
                                 <td>배송준비중</td>
-                                <td><button type="button" class="el_btnS hp_br5 el_btnPointBord" disabled>등록하기</button></td>
+                                <td>
+                                    <!-- 배송준비중까지만 가능 -->
+                                    <!-- <button type="button" class="el_btnS hp_br5 hp_margin5 el_btn8Bord">주문취소</button> -->
+                                    <!-- // 배송준비중까지만 가능 -->
+                                    <!-- 배송완료 후부터 가능 -->
+                                    <button type="button" class="el_btnS hp_br5 hp_margin5 el_btn8Bord">환불신청</button>                                
+                                    <button type="button" class="el_btnS hp_br5 hp_margin5 el_btnPointBack">구매확정</button>
+                                    <button type="button" class="el_btnS hp_br5 hp_margin5 el_btnPointBord">리뷰등록</button>
+                                    <!-- // 배송완료 후부터 가능 -->
+                                </td>
                             </tr>
                             <tr>
-                                <td class="bl_TBList__empty" colspan="4">주문내역이 없습니다.</td>
+                                <td>2024.01.23</td>
+                                <td>123,456원</td>
+                                <td class="bl_TBList__ttl">
+                                    <!-- 가장 상단 상품 하나만 표시 -->
+                                    <a class="ly_flexC ly_fitemC" href="">
+                                        <img class="bl_TBList__orderImg" src="/img/sample/img01.jpg" alt=""/>
+                                        <p class="hp_ellipsis hp_ellipsis3">여권지갑 여권케이스 여권커버 안티스키밍 RFID 차단</p>
+                                    </a>
+                                </td>
+                                <td>배송준비중</td>
+                                <td>
+                                    <!-- 배송준비중까지만 가능 -->
+                                    <!-- <button type="button" class="el_btnS hp_br5 hp_margin5 el_btn8Bord">주문취소</button> -->
+                                    <!-- // 배송준비중까지만 가능 -->
+                                    <!-- 배송완료 후부터 가능 -->
+                                    <button type="button" class="el_btnS hp_br5 hp_margin5 el_btn8Bord">환불신청</button>                                
+                                    <button type="button" class="el_btnS hp_br5 hp_margin5 el_btnPointBack">구매확정</button>
+                                    <button type="button" class="el_btnS hp_br5 hp_margin5 el_btnPointBord">리뷰등록</button>
+                                    <!-- // 배송완료 후부터 가능 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024.01.23</td>
+                                <td>123,456원</td>
+                                <td class="bl_TBList__ttl">
+                                    <!-- 가장 상단 상품 하나만 표시 -->
+                                    <a class="ly_flexC ly_fitemC" href="">
+                                        <img class="bl_TBList__orderImg" src="/img/sample/img01.jpg" alt=""/>
+                                        <p class="hp_ellipsis hp_ellipsis3">여권지갑 여권케이스 여권커버 안티스키밍 RFID 차단</p>
+                                    </a>
+                                </td>
+                                <td>배송준비중</td>
+                                <td>
+                                    <!-- 배송준비중까지만 가능 -->
+                                    <!-- <button type="button" class="el_btnS hp_br5 hp_margin5 el_btn8Bord">주문취소</button> -->
+                                    <!-- // 배송준비중까지만 가능 -->
+                                    <!-- 배송완료 후부터 가능 -->
+                                    <button type="button" class="el_btnS hp_br5 hp_margin5 el_btn8Bord">환불신청</button>                                
+                                    <button type="button" class="el_btnS hp_br5 hp_margin5 el_btnPointBack">구매확정</button>
+                                    <button type="button" class="el_btnS hp_br5 hp_margin5 el_btnPointBord">리뷰등록</button>
+                                    <!-- // 배송완료 후부터 가능 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bl_TBList__empty" colspan="5">주문내역이 없습니다.</td>
                             </tr>
                         </tbody>
                     </table>

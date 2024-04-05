@@ -27,74 +27,116 @@
                         </colgroup>
                         <tbody>
                             <tr>
-                                <th scope="row">주문번호</th>
+                                <th scope="row">주문코드</th>
                                 <td>1234567890</td>
-                                <th scope="row">결제일</th>
-                                <td>2024.01.23</td>
+                                <th scope="row">주문상태 / 배송상태</th>
+                                <td>주문완료 / 배송준비중</td>
+                                <!-- 주문취소한 주문내역일때 -->
+                                <!-- <th scope="row">환불상태</th>
+                                <td>환불대기</td> -->
                             </tr>
                             <tr>
-                                <th scope="row">배송상태</th>
-                                <td colspan="3">배송준비중</td>
+                                <th scope="row">결제금액</th>
+                                <td>123,456원</td>
+                                <th scope="row">결제날짜</th>
+                                <td>2024-02-02</td>
                             </tr>
                             <tr>
-                                <th scope="row">주문 상품</th>
+                                <th scope="row">결제방법</th>
+                                <td colspan="3">카카오페이</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주문상세</th>
                                 <td colspan="3">
                                     <div class="bl_orderView ly_flex">
-                                        <ul class="">
+                                        <!-- 주문취소한 주문내역일때는 체크박스 비활성화 또는 표시X -->
+                                        <ul class="bl_orderViewList ly_fgrow1">
                                             <li class="ly_flex ly_fitemC">
-                                                <img class="bl_orderView__img" src="/img/sample/img01.jpg" alt=""/>
-                                                <dl class="bl_orderView__info">
-                                                    <dt class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis. Eaque, qui culpa.</dt>
-                                                    <dd class="hp_mt10">8,900원 <span class="hp_ml10 hp_mr10">/</span>1개</dd>
-                                                </dl>
+                                                <label class="bl_checkBx">
+                                                    <input type="checkbox" class="bl_checkBx__input" checked>
+                                                    <span class="bl_checkBx__check"></span>
+                                                    <img class="bl_orderView__img" src="/img/sample/img01.jpg" alt=""/>
+                                                    <dl class="bl_orderView__info hp_alignL">
+                                                        <dt class="hp_ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis. Eaque, qui culpa.</dt>
+                                                        <dd class="hp_mt5">8,900원 <span class="hp_ml10 hp_mr10">/</span>1개</dd>
+                                                    </dl>
+                                                </label>
                                             </li>
-                                            <li class="ly_flex ly_fitemC hp_mt5">
-                                                <img class="bl_orderView__img" src="/img/sample/img01.jpg" alt=""/>
-                                                <dl class="bl_orderView__info">
-                                                    <dt class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis. Eaque, qui culpa.</dt>
-                                                    <dd class="hp_mt10">8,900원 <span class="hp_ml10 hp_mr10">/</span>1개</dd>
-                                                </dl>
+                                            <li class="ly_flex ly_fitemC">
+                                                <label class="bl_checkBx">
+                                                    <input type="checkbox" class="bl_checkBx__input" checked>
+                                                    <span class="bl_checkBx__check"></span>
+                                                    <img class="bl_orderView__img" src="/img/sample/img01.jpg" alt=""/>
+                                                    <dl class="bl_orderView__info hp_alignL">
+                                                        <dt class="hp_ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis. Eaque, qui culpa.</dt>
+                                                        <dd class="hp_mt5">8,900원 <span class="hp_ml10 hp_mr10">/</span>1개</dd>
+                                                    </dl>
+                                                </label>
                                             </li>
-                                            <li class="ly_flex ly_fitemC hp_mt5">
-                                                <img class="bl_orderView__img" src="/img/sample/img01.jpg" alt=""/>
-                                                <dl class="bl_orderView__info">
-                                                    <dt class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis. Eaque, qui culpa.</dt>
-                                                    <dd class="hp_mt10">8,900원 <span class="hp_ml10 hp_mr10">/</span>1개</dd>
-                                                </dl>
+                                            <li class="ly_flex ly_fitemC">
+                                                <label class="bl_checkBx">
+                                                    <input type="checkbox" class="bl_checkBx__input" checked>
+                                                    <span class="bl_checkBx__check"></span>
+                                                    <img class="bl_orderView__img" src="/img/sample/img01.jpg" alt=""/>
+                                                    <dl class="bl_orderView__info hp_alignL">
+                                                        <dt class="hp_ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis. Eaque, qui culpa.</dt>
+                                                        <dd class="hp_mt5">8,900원 <span class="hp_ml10 hp_mr10">/</span>1개</dd>
+                                                    </dl>
+                                                </label>
                                             </li>
-                                            <li class="ly_flex ly_fitemC hp_mt5">
-                                                <img class="bl_orderView__img" src="/img/sample/img01.jpg" alt=""/>
-                                                <dl class="bl_orderView__info">
-                                                    <dt class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis. Eaque, qui culpa.</dt>
-                                                    <dd class="hp_mt10">8,900원 <span class="hp_ml10 hp_mr10">/</span>1개</dd>
-                                                </dl>
-                                            </li>
-                                            <li class="ly_flex ly_fitemC hp_mt5">
-                                                <img class="bl_orderView__img" src="/img/sample/img01.jpg" alt=""/>
-                                                <dl class="bl_orderView__info">
-                                                    <dt class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis. Eaque, qui culpa.</dt>
-                                                    <dd class="hp_mt10">8,900원 <span class="hp_ml10 hp_mr10">/</span>1개</dd>
-                                                </dl>
+                                            <li class="ly_flex ly_fitemC">
+                                                <label class="bl_checkBx">
+                                                    <input type="checkbox" class="bl_checkBx__input" checked>
+                                                    <span class="bl_checkBx__check"></span>
+                                                    <img class="bl_orderView__img" src="/img/sample/img01.jpg" alt=""/>
+                                                    <dl class="bl_orderView__info hp_alignL">
+                                                        <dt class="hp_ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis. Eaque, qui culpa.</dt>
+                                                        <dd class="hp_mt5">8,900원 <span class="hp_ml10 hp_mr10">/</span>1개</dd>
+                                                    </dl>
+                                                </label>
                                             </li>
                                         </ul>
+                                        <!-- 리스트의 버튼과 동일하게 동작 -->
+                                        <!-- 주문취소한 주문내역일때는 버튼 표시X -->
                                         <div class="bl_orderView__btnZip">
-                                            <button type="button" class="el_btnS hp_br5 el_btnPointBord hp_w100">배송조회</button>
-                                            <button type="button" class="el_btnS hp_br5 el_btn8Bord hp_mt10 hp_w100">주문취소</button>
-                                            <button type="button" class="el_btnS hp_br5 el_btnPointBack hp_mt10 hp_w100">리뷰작성</button>
+                                            <button type="button" class="el_btnS hp_br5 hp_margin5 el_btn8Bord">주문취소</button>
+                                            <button type="button" class="el_btnS hp_br5 hp_margin5 el_btn8Bord">환불신청</button>                                
+                                            <button type="button" class="el_btnS hp_br5 hp_margin5 el_btnPointBack">구매확정</button>
+                                            <button type="button" class="el_btnS hp_br5 hp_margin5 el_btnPointBord">리뷰등록</button>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">받는 사람</th>
+                                <th scope="row">수령인</th>
                                 <td>홍길동</td>
                                 <th scope="row">연락처</th>
-                                <td>010-9769-8204</td>
+                                <td>01012345678</td>
                             </tr>
                             <tr>
                                 <th scope="row">주소</th>
                                 <td colspan="3">서울특별시 종로구 인사동길 12 대일빌딩 15층</td>
                             </tr>
+                            <!-- 주문취소한 주문내역일때 -->
+                            <!-- <tr>
+                                <th scope="row">환불정보</th>
+                                <td colspan="3">
+                                    <ul class="bl_orderCancel">
+                                        <li class="ly_spaceBetween ly_fitemC">
+                                            <p class="bl_orderCancel__ttl">상품금액</p>
+                                            <p class="bl_orderCancel__price">18,300원</p>
+                                        </li>
+                                        <li class="ly_spaceBetween ly_fitemC">
+                                            <p class="bl_orderCancel__ttl">배송비</p>
+                                            <p class="bl_orderCancel__price">0원</p>
+                                        </li>
+                                        <li class="ly_spaceBetween ly_fitemC bl_orderCancel__total">
+                                            <p class="bl_orderCancel__ttl hp_fs18 hp_fw700 hp_0Color">환불금액</p>
+                                            <p class="bl_orderCancel__price hp_fs18 hp_fw700 hp_pointColor">18,300원</p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr> -->
                         </tbody>
                     </table>
                     <ul class="ly_flexC hp_mt70">

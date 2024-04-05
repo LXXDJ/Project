@@ -270,6 +270,8 @@ input[type=date].hp_inputBack,.hp_inputBack{background-color:#eee;border:none;}
 .hp_mr15{margin-right:15px!important;}
 .hp_mr20{margin-right:20px!important;}
 .hp_mr30{margin-right:30px!important;}
+.hp_mr40{margin-right:40px!important;}
+.hp_mr50{margin-right:50px!important;}
 .hp_mb0{margin-bottom:0!important;}
 .hp_mb5{margin-bottom:5px!important;}
 .hp_mb10{margin-bottom:10px!important;}
@@ -285,3 +287,5 @@ input[type=date].hp_inputBack,.hp_inputBack{background-color:#eee;border:none;}
 .hp_ml25{margin-left:25px!important;}
 .hp_ml30{margin-left:30px!important;}
 .hp_ml35{margin-left:35px!important;}
+.hp_ml40{margin-left:40px!important;}
+.hp_ml50{margin-left:50px!important;}

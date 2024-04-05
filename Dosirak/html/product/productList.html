@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="/css/common/base.css"/>
     <link rel="stylesheet" href="/css/common/common.css"/>
     <link rel="stylesheet" href="/css/product.css"/>
-    <script src="/js/jquery-3.7.1.min.js"></script>
-    <script>
-        $(function(){
-            // tab
-            let categoryLength = $(".bl_pdCategory__cont").length;
-            let categoryWD = 100 / categoryLength;
-            $(".bl_pdCategory__cont").css("width", categoryWD + "%");
-
-            $(".bl_pdCategory__btn").click(function(){
-                $(".bl_pdCategory__btn").removeClass("hp_active")
-                $(this).addClass("hp_active");
-            });
-        })
-    </script>
 </head>
 <body>
     <div class="ly_all bl_all">

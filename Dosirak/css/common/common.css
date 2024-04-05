@@ -31,6 +31,7 @@
 .bl_pagingIcon__prev::after{content:"";display:block;width:100%;height:100%;background:url("/img/icon/arrow.png")no-repeat center/20px;transform:rotate(180deg);}
 .bl_pagingIcon__next{background:url("/img/icon/arrow.png")no-repeat center/20px #fff;}
 /* 검색 */
+.ly_midWDside .bl_TBList .hp_ellipsis{width:430px;}
 .bl_TBsearch{background:#F9F9F9;border-top:1px solid #777;}
 .bl_TBsearch th{text-align:center;}
 .bl_TBsearch td{padding:10px;padding-right:50px;}
@@ -40,7 +41,7 @@
 .bl_TBList thead{background:#F9F9F9;}
 .bl_TBList tr{border-top:1px solid #dedede;}
 .bl_TBList th,.bl_TBList td{padding:20px 10px;text-align:center;}
-.bl_TBList__ttl a{display:block;text-align:left;/*width:520px;*/}
+.bl_TBList__ttl a{display:block;text-align:left;}
 .bl_TBList__ttl a:hover{color:#426B1F;}
 .bl_TBList .bl_TBList__empty{padding:50px 0;color:#aaa;}
 .bl_TBList__empty::before{content:"";display:block;width:70px;height:70px;background:url("/img/icon/bento.png")no-repeat center/cover;margin:0 auto 20px;}

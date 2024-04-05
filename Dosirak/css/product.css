@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .bl_pdCategory{border-top:1px solid #dedede;margin-top:50px;}
+.bl_pdCategory__cont{width:100%;}
 .bl_pdCategory__btn{display:block;width:100%;text-align:center;padding:20px 0;font-size:16px;border-bottom:4px solid transparent;}
 .bl_pdCategory__btn:hover{background:#F0FFE3;}
 .bl_pdCategory__btn.hp_active{border-bottom-color:#426B1F;color:#426B1F;}
@@ -11,3 +12,17 @@
 .bl_pdList__ttl{font-size:18px;width:100%;}
 .bl_pdList__txt{color:#777;margin:5px 0 15px;min-height:42px;}
 .bl_pdList__price{font-size:16px;}
+
+.bl_pdView__wrap, .bl_pdView__img{width:500px;}
+
+.bl_tab{margin-top:150px;}
+.bl_tabCont{border:2px solid #426B1F;}
+
+.bl_pdView__info dl{display:flex;margin-top:50px;}
+.bl_pdView__info dl:first-child{margin-top:0;}
+.bl_pdView__info dt,.bl_pdView__info dd{padding:15px;}
+.bl_pdView__info dt{font-size:20px;flex-basis:200px;flex-shrink:0;color:#777;}
+.bl_pdView__info dd{font-size:16px;flex-grow:1;padding-left:50px;padding-right:50px;border-left:2px solid #ddd;}
+
+
+.bl_pdView .bl_TBsearch{border-top:1px solid #dedede;}
