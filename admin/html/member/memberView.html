@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>회원정보 상세보기</title>
+        <title>회원 상세</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="/css/styles.css" rel="stylesheet" />
         <link href="/css/common.css" rel="stylesheet" />
@@ -19,7 +19,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">회원정보 상세보기</h1>
+                        <h1 class="mt-4">회원 상세</h1>
                         <table class="datatable-table mt-4">
                             <colgroup>
                                 <col style="width:15%"/>
@@ -55,10 +55,10 @@
                                 <tr>
                                     <th scope="row">마케팅동의</th>
                                     <td colspan="3">
-                                        <label for="" class="ml30">
-                                            <input name="smsyes" type="checkbox" id="agree_method_sms" class="agree_method" value="Y" checked=""> 문자(SMS)
+                                        <label for="">
+                                            <input name="smsyes" type="checkbox" id="agree_method_sms" class="agree_method" value="Y" checked=""> 문자
                                         </label>
-                                        <label for="" class="ml15">
+                                        <label for="" class="ms-3">
                                             <input name="emailyes" type="checkbox" id="agree_method_email" class="agree_method" value="N"> 이메일
                                         </label>
                                     </td>
@@ -80,7 +80,7 @@
                         <div class="editBtn text-end">
                             <button type="button" class="btn btn-dark">비밀번호 초기화</button>
                             <button type="button" class="btn btn-primary">수정</button>
-                            <button type="button" class="btn btn-secondary">삭제</button>
+                            <a class="btn btn-secondary" href="/html/member/memebrList.html">목록</a>
                         </div>
                     </div>
                 </main>
