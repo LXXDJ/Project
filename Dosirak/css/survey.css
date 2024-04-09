@@ -1,3 +1,9 @@
+.bl_surveyTB th{text-align:left;}
+.bl_surveyTB td{padding:5px 0;}
+.bl_surveyTB .bl_radioBxArea__txt{border:1px solid #426B1F;background:#fff;color:#426B1F;height:40px;}
+
+
+
 .select {
     padding: 15px 10px;
     margin: auto;

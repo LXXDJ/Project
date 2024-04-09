@@ -5,12 +5,12 @@
 .bl_head__logo{width:120px;}
 .bl_head__logoBtn{display:block;}
 .bl_head__menuCitem{display:inline-block;margin:0 25px;font-size:16px;}
-.bl_headIcon:hover + .bl_head__menuSub{display:block;}
-.bl_headIcon__mypage{width:25px;}
-.bl_headIcon__cart{width:30px;display:inline-block;}
-.bl_headIcon__customer{width:28px;}
+.bl_headIcon{width:50px;}
+.bl_headIcon__mypage{padding:14px;}
+.bl_headIcon__cart{display:inline-block;padding:11px;}
+.bl_headIcon__customer{padding:12px;}
 .bl_head__menuR>li{display:flex;}
-.bl_head__menuSub{display:none;position:absolute;bottom:-10px;left:50%;transform:translate(-50%, 100%);padding:15px 20px;text-align:center;background:#426B1F;color:#fff;}
+.bl_head__menuSub{display:none;position:absolute;bottom:0;left:50%;transform:translate(-50%, 100%);padding:15px 20px;text-align:center;background:#426B1F;color:#fff;}
 .bl_head__menuSub a{display:block;line-height:2;}
 /* foot */
 .bl_foot{background:#fff;border-top:1px solid #dedede;height:550px;position:absolute;bottom:0;left:0;width:100%;z-index:999;}

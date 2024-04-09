@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="/css/common/reset.css"/>
     <link rel="stylesheet" href="/css/common/base.css"/>
     <link rel="stylesheet" href="/css/common/common.css"/>
+    <script src="/js/common/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            let isNone = $(".bl_headIcon + .bl_head__menuSub").css('display', 'none');
+
+            $(".bl_headIcon").mouseover(function(){
+                if(isNone) $(".bl_head__menuSub", this).css('display', 'block');
+            })
+            $(".bl_headIcon").mouseleave(function(){
+                $(".bl_head__menuSub", this).css('display', 'none');
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="ly_all bl_all">
@@ -29,24 +42,28 @@
                         <!-- 로그인전 : 로그인 페이지로 이동 -->
                         <!-- <a class="" href=""><img src="/img/icon/header_myinfo.png" alt="마이페이지"></a> -->
                         <!-- 로그인후 : 마이페이지 메뉴 펼치기 -->
-                        <button type="button" class="bl_headIcon bl_headIcon__mypage"><img src="/img/icon/header_myinfo.png" alt="마이페이지"></button>
-                        <ul class="bl_head__menuSub">
-                            <li class=""><a class="" href="">나의정보</a></li>
-                            <li class=""><a class="" href="">주문내역</a></li>
-                            <li class=""><a class="" href="">리뷰내역</a></li>
-                            <li class=""><a class="" href="">나의설문</a></li>
-                            <li class=""><a class="" href="">로그아웃</a></li>
-                        </ul>
+                        <button type="button" class="bl_headIcon bl_headIcon__mypage">
+                            <img src="/img/icon/header_myinfo.png" alt="마이페이지">
+                            <ul class="bl_head__menuSub">
+                                <li class=""><a class="" href="">나의정보</a></li>
+                                <li class=""><a class="" href="">주문내역</a></li>
+                                <li class=""><a class="" href="">리뷰내역</a></li>
+                                <li class=""><a class="" href="">나의설문</a></li>
+                                <li class=""><a class="" href="">로그아웃</a></li>
+                            </ul>
+                    </button>
                     </li>
-                    <li class="hp_ml20"><a class="bl_headIcon bl_headIcon__cart" href=""><img src="/img/icon/header_cart.png" alt="장바구니"></a></li>
-                    <li class="hp_ml20 hp_relative">
-                        <button type="button" class="bl_headIcon bl_headIcon__customer"><img src="/img/icon/header_customer.png" alt="고객센터"></button>
-                        <ul class="bl_head__menuSub">
-                            <li class=""><a class="" href="">공지사항</a></li>
-                            <li class=""><a class="" href="">자주묻는질문</a></li>
-                            <li class=""><a class="" href="">1:1 문의하기</a></li>
-                            <li class=""><a class="" href="">1:1 문의내역</a></li>
-                        </ul>
+                    <li class=""><a class="bl_headIcon bl_headIcon__cart" href=""><img src="/img/icon/header_cart.png" alt="장바구니"></a></li>
+                    <li class="hp_relative">
+                        <button type="button" class="bl_headIcon bl_headIcon__customer">
+                            <img src="/img/icon/header_customer.png" alt="고객센터">
+                            <ul class="bl_head__menuSub">
+                                <li class=""><a class="" href="">공지사항</a></li>
+                                <li class=""><a class="" href="">자주묻는질문</a></li>
+                                <li class=""><a class="" href="">1:1 문의하기</a></li>
+                                <li class=""><a class="" href="">1:1 문의내역</a></li>
+                            </ul>
+                        </button>
                     </li>
                 </ul>
             </div>
